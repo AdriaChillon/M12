@@ -1,0 +1,98 @@
+/*Asignamos al body los estilos principales*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+/* ESTILOS PARA EL NAV*/
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li:hover {
+    background: #eca023;
+  }
+/*Aplicamos al container principal las medidas y lo centramos al medio*/
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*Alineamos el contenedor de las etiquetas del filtro*/
+.projectes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*Definimos diferentes estilos los lenguajes que podemos elegir en el filtro*/
+.lenguaj {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.lenguaj:hover {
+    background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Definimos diferentes estilos en el div de los proyectos*/
+.proyecto {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.proyecto h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+ .proyecto p {
+    margin: 5px 0;
+}
+/*Mostramos los proyectos en bloque, para que siempre aparezcan*/
+.visible {
+    display: block;
+}

@@ -1,0 +1,79 @@
+body {
+    background-color: #f0f0f0;
+}
+/* ESTILOS PARA EL NAV*/
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li:hover {
+    background: #eca023;
+  }
+/* Títulos */
+h1,h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    , Times, serif;
+}
+/*Aplicamos flexbox a todo el container para distrubuir en bloques la pàgina*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+/* Le damos estilo a las sections para que queden todas iguales*/
+section {
+    background-color: rgba(220, 220, 220, 0.929);
+    border: 1px transparent;
+    border-radius:22px ;
+}
+/*Estilo de las imagenes*/
+img {
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+/* Container d'esports aplico flex para distrubuir las imagenes */
+.esports {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/* Le doy anchura para que ocupe toda la pàgina y asi quede como un título*/
+.afi {
+    width: 100%;
+}
+
+
+
+
+

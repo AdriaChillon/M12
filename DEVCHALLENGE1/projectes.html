@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectes</title>
+    <link rel="stylesheet" href="projectes.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu">Informació Personal</a></li>
+            <li><a href="habilitats.html" class="menu">Habilitats/Aficions</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="projectes">
+            <button class="lenguaj" onclick="filtrarProyectos('todos')">Todos</button>
+            <button class="lenguaj" onclick="filtrarProyectos('JavaScript')">JavaScript</button>
+            <button class="lenguaj" onclick="filtrarProyectos('Java')">Java</button>
+            <button class="lenguaj" onclick="filtrarProyectos('PHP')">PHP</button>
+        </div>
+
+        <div class="proyecto" data-lenguaje="JavaScript">
+            <h3><a href="index.html">DEVCHALLENGE1</a></h3>
+            <p>Lenguaje: JavaScript</p>
+        </div>
+
+        <div class="proyecto" data-lenguaje="PHP">
+            <h3>DEVCHALLENGE2</h3>
+            <p>Lenguaje: PHP</p>
+        </div>
+    </div>
+    <script src="projectes.js"></script>
+</body>
+
+</html>
