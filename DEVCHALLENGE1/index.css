@@ -1,11 +1,8 @@
-
-.container {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  height: min-content;
+body {
+  margin: 0;
+  padding: 0;
 }
-/* ESTILOS PARA EL NAV*/
+/* ESTILOS PARA EL NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -40,41 +37,60 @@ nav ul li a {
 nav ul li:hover {
   background: #eca023;
 }
-/*Estilos del div principal de la información*/
+
+
+/* Estilos del div principal de la información */
 .datos-personales {
-    padding: 13%;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: auto;
-    text-align: center;
-    height: 100%;
+  padding: 5%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto; /* Centramos el contenido horizontalmente */
+  text-align: center;
 }
 
 /* Estilo del nombre */
 .nombre {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Estilo de los datos personales */
 .datos {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-/*Movemos la imagen del avatar hacia el lado izquierdo*/
+
+/* Movemos la imagen del avatar hacia el lado izquierdo */
 .fotodni {
-    float: left;
-    width: 30%;
-    height: 30%;
+  width: 100%; /* Cambiamos el ancho relativo */
+  max-width: 200px; /* Establecemos un ancho máximo */
+  height: auto; /* Mantenemos la proporción */
 }
-/* Damos estilo a las imagenes*/
+
+/* Damos estilo a las imágenes */
 img {
-    margin-right: 10px;
-    width: 2%;
-    height: 2%;
+  margin-right: 10px;
+  width: 20px; /* Aumentamos el tamaño de las imágenes */
+  height: 20px; /* Aumentamos el tamaño de las imágenes */
 }
 
+/* Estilos para hacer el menú responsive en dispositivos móviles */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .datos-personales {
+    padding: 10%;
+  }
+}

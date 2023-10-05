@@ -5,41 +5,42 @@ body {
     margin: 0;
     padding: 0;
 }
-/* ESTILOS PARA EL NAV*/
+/* ESTILOS PARA EL NAV */
 nav {
-    display: flex;
-    justify-content: center;
-    background: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  
-  nav ul {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-  }
-  
-  nav ul li {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    display: inline-block;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  
-  nav ul li:hover {
-    background: #eca023;
-  }
+  display: flex;
+  justify-content: center;
+  background: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul li {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+  background: #eca023;
+}
+
 /*Aplicamos al container principal las medidas y lo centramos al medio*/
 .container {
     max-width: 800px;
